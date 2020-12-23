@@ -1,21 +1,12 @@
 {
-  "name": "@uniswap/token-lists",
-  "author": "Moody Salem",
+  "name": "@valueswap/token-lists",
+  "version": "1.0.1",
   "description": "📚 The Token Lists specification",
-  "version": "1.0.0-beta.19",
+  "author": "Value Network",
   "license": "MIT",
-  "main": "dist/index.js",
-  "typings": "dist/index.d.ts",
-  "files": [
-    "dist",
-    "src"
-  ],
-  "engines": {
-    "node": ">=10"
-  },
   "repository": {
-    "url": "https://github.com/Uniswap/token-lists",
-    "type": "git"
+    "type": "git",
+    "url": "https://github.com/valuenetworklive2021/valueswap-token-lists"
   },
   "scripts": {
     "start": "tsdx watch",
@@ -24,7 +15,13 @@
     "lint": "tsdx lint",
     "prepublishOnly": "tsdx test && tsdx build"
   },
-  "peerDependencies": {},
+  "main": "dist/index.js",
+  "module": "dist/token-lists.esm.js",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "typings": "dist/index.d.ts",
   "husky": {
     "hooks": {
       "pre-commit": "tsdx lint"
@@ -36,12 +33,20 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "module": "dist/token-lists.esm.js",
+  "engines": {
+    "node": ">=10"
+  },
   "devDependencies": {
     "ajv": "^6.12.2",
     "husky": "^4.2.5",
     "tsdx": "^0.14.0",
     "tslib": "^2.0.0",
     "typescript": "^3.9.5"
-  }
+  },
+  "keywords": [
+    "ethereum",
+    "valueswap",
+    "token lists",
+    "valueswap token lists"
+  ]
 }

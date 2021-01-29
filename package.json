@@ -2,7 +2,11 @@
   "name": "@valueswap/token-lists",
   "version": "1.0.1",
   "description": "📚 The Token Lists specification",
-  "author": "Value Network",
+  "author": {
+    "name": "Value Network",
+    "email": "support@valuenetwork.live",
+    "url": "https://valuenetwork.live"
+  },
   "license": "MIT",
   "repository": {
     "type": "git",
